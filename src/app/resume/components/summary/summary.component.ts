@@ -2,12 +2,12 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-certifications',
+  selector: 'app-summary',
   standalone: true,
   imports: [
     CommonModule,
   ],
-  templateUrl: './certifications.component.html',
+  templateUrl: './summary.component.html',
   styles: `
     :host {
       display: block;
@@ -15,4 +15,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class CertificationsComponent { }
+export default class SummaryComponent { }

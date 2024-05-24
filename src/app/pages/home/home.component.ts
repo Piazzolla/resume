@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { SideBarComponent } from "../../shared/components/side-bar/side-bar.component";
+import { RouterOutlet } from '@angular/router';
+
 
 @Component({
     selector: 'resume-home',
@@ -14,7 +16,8 @@ import { SideBarComponent } from "../../shared/components/side-bar/side-bar.comp
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
         CommonModule,
-        SideBarComponent
+        SideBarComponent,
+        RouterOutlet
     ]
 })
-export class HomeComponent { }
+export default class HomeComponent { }

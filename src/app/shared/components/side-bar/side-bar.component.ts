@@ -18,6 +18,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 export class SideBarComponent {
   @Input()
   public menuItems = [
+    'Summary',
     'About Me',
     'Experience',
     'Education',

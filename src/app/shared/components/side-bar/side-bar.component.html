@@ -1,16 +1,19 @@
-<div id="menu" class="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0 h-screen overflow-y-scroll">
+<div id="menu" class="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0 h-screen font-opensans">
 
 <div id="nav" class="w-full px-6">
 
   <div class="dark:bg-darkBlue dark:text-white font-opensans flex flex-col">
 
-    <div class="pb-16 pt-8 bg-gray-900 text-center border-b border-slate-700">
+    <div class="pb-8 pt-8 bg-gray-900 text-center border-b border-slate-700">
       <h3 class="text-4xl  pb-2 ">Mariano Burgos</h3>
       <h1>Résumé</h1>
     </div>
     <ul>
       @for (item of menuItems; track $index) {
-        <a class="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150">
+        <a class="w-full px-2 inline-flex space-x-2 items-center
+            border-b border-slate-700 py-3 hover:bg-white/5
+            transition ease-linear duration-150"
+        >
           {{item}}
         </a>
       }
