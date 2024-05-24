@@ -11,11 +11,6 @@ export const routes: Routes = [
         loadComponent: () => import('./resume/components/summary/summary.component')
       },
       {
-        path: 'summary',
-        title: 'Summary',
-        loadComponent: () => import('./resume/components/summary/summary.component')
-      },
-      {
         path: 'aboutme',
         title: 'About Me',
         loadComponent: () => import('./resume/components/about-me/about-me.component')
@@ -47,14 +42,14 @@ export const routes: Routes = [
       },
       {
         path:'',
-        redirectTo: '/home/summary',
+        redirectTo: 'summary',
         pathMatch: 'full'
       }
     ]
   },
   {
-    path:'**',
-    redirectTo: '/home/summary',
+    path:'',
+    redirectTo: '/home',
     pathMatch: 'full'
   }
 
