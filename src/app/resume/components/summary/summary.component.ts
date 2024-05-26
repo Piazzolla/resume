@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TextService } from '../../services/text.service';
 
 @Component({
   selector: 'app-summary',
@@ -15,4 +16,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class SummaryComponent { }
+export default class SummaryComponent {
+
+  public text;
+  constructor( textService: TextService) {
+    this.text = textService.getSummaryText();
+  }
+
+
+
+}
