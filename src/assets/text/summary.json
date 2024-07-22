@@ -1,15 +1,56 @@
 {
-  "contact_title": ["Contact"],
-  "contact" : ["Check my LinkedIn for contact information:"],
+  "contact_title":
+    "Contact"
+  ,
+  "contact":
+    "Check my LinkedIn for contact information:"
+  ,
+  "about_title":
+    "About"
+  ,
+  "about":
+    ["I have worked writing software since 2006. I worked with Java, Javascript and Typescript and briefly with some other languages. I’ve worked with Angular, Spring Boot, Oracle 12, NodeJs and many others.",
+    "I've been a certified AWS Associate Developer since December 2023.",
+    "I speak Spanish natively and I've been fluent in English since I spent my senior year of high school in Texas, after studying the language for ten years.",
+    "I’m Argentina based, willing to work remotely."]
+  ,
+  "experience_title":
+    "experience"
+  ,
+  "experience": [
+    {
+      "logo": "pjn.jfif",
+      "title":
+        "Argentina's Judiciary"
+      ,
+      "time":
+        "January 2012 - July 2022, Buenos Aires"
+      ,
+      "description":
+        "Software Developer January 2012 - July 2022, Buenos Aires Worked with Java for the first few years making portlets for a Liferay instance that served as an intranet for the whole Judiciary system. Did fullstack with Angular and Spring Boot for the latter years. Also used some other technologies such as Wordpress, PHP, NodeJs, Oracle 12, etc."
 
-  "about_title": ["About"],
-  "about" : ["I have worked writing software since 2006. I worked with Java, Javascript and Typescript and briefly with some other languages. I’ve worked with Angular, Spring Boot, Oracle 12, NodeJs and many others. I've been a certified AWS Associate Developer since December 2023. The last course I took was on the Pandas library in Python. I speak Spanish natively and I've been fluent in English since I spent my senior year of high school in Texas, after studying the language for ten years. I’m Argentina based, willing to work remotely."],
-
-  "experience_title": ["experience"],
-  "experience_1_title": ["Argentina's Judiciary"],
-  "experience_1_time": ["January 2012 - July 2022, Buenos Aires"],
-  "experience_1_description": ["Software Developer January 2012 - July 2022, Buenos Aires Worked with Java for the first few years making portlets for a Liferay instance that served as an intranet for the whole Judiciary system. Did fullstack with Angular and Spring Boot for the latter years. Also used some other technologies such as Wordpress, PHP, NodeJs, Oracle 12, etc."],
-  "experience_2_title": ["Gameloft"],
-  "experience_2_time": ["April 2006 - April 2011, Buenos Aires"],
-  "experience_2_description": ["3 years in the area of porting,  adapting existing code to limited capacity mobile devices. 2 years in the area of creations, developing games from scratch. "]
+    },
+    {
+      "logo": "gameloft.png",
+      "title":
+        "Gameloft"
+      ,
+      "time":
+        "April 2006 - April 2011, Buenos Aires"
+      ,
+      "description":
+        "3 years in the area of porting,  adapting existing code to limited capacity mobile devices. 2 years in the area of creations, developing games from scratch. "
+    },
+    {
+      "logo": "casadelchubut.png",
+      "title":
+        "Casa del Chubut"
+      ,
+      "time":
+        "February 2005 - April 2006, Buenos Aires"
+      ,
+      "description":
+        "First experience working with computers. They had a bunch of old computers and I had to keep them running."
+    }
+  ]
 }

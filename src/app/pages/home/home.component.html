@@ -1,8 +1,8 @@
-
-<div class="flex flex-row">
-
-  <side-bar></side-bar>
-
-  <router-outlet></router-outlet>
-
+<div class="relative h-screen overflow-hidden md:flex">
+  <div class="sidebar absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+    <side-bar></side-bar>
+  </div>
+  <div class="overflow-y-auto">
+    <router-outlet></router-outlet>
+  </div>
 </div>
