@@ -1,11 +1,11 @@
-<section id="contact" class="pb-20">
-  <h1 class="text-5xl text-center pt-10  font-bold">{{text.contact_title | titlecase}}</h1>
+<!-- <section id="contact" class="pb-20">
+  <h1 class="text-8xl text-center pt-10  font-bold">{{text.contact_title | titlecase}}</h1>
   <p>
     {{text.contact}}
   </p>
-</section>
+</section> -->
 <section id="about" class="pb-20">
-  <h1 class="text-5xl text-center p-10 font-bold">{{text.about_title | titlecase}}</h1>
+  <h1 class="text-8xl text-center p-10 font-bold">{{text.about_title | titlecase}}</h1>
 
   <!-- about text  -->
   <div class="flex flex-row justify-evenly items-start">
@@ -17,16 +17,17 @@
       }
     </div>
     <div>
-      <img src="../../../../assets/images/mendoza.svg" class="p-2 h-96 bottom-1 align-middle"/>
+      <img src="../../../../assets/images/mendoza.svg" class="p-2 h-96 bottom-1 align-middle hover:scale-110 transition duration-300"/>
     </div>
   </div>
 </section>
-<section id="experience" class="bg-slate-500">
-  <h2 class="text-5xl text-white text-center p-20 font-bold">{{ text.experience_title | titlecase}}</h2>
+<section id="experience" class="bg-orange-300">
+  <h2 class="text-8xl text-white text-center p-20 font-bold">{{ text.experience_title | titlecase}}</h2>
   <div class="grid grid-cols-1 lg:grid-cols-2 m-4">
     @for (experience of text['experience']; track experience.title) {
-     <summary-info-card [title]='experience.title' [subtitle]='experience.time' [description]='experience.description'
-      [logo]='experience.logo' [years]='experience.years'/>
+     <summary-info-card
+      [experience]="experience"
+      />
     }
   </div>
 </section>

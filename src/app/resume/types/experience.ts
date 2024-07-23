@@ -10,6 +10,7 @@ export interface Resume {
 export interface Experience {
   logo:         string;
   title:        string;
+  subtitle:     string;
   time:         string;
   years:        string;
   technologies: string[];

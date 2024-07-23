@@ -27,7 +27,7 @@
         "January 2012 - July 2022, Buenos Aires"
       ,
       "years": "10 years",
-      "technologies": ["java", "liferay", "angular", "spring boot", "typescript", "javascript", "mysql", "orcle db"],
+      "technologies": ["java", "liferay", "angular", "spring boot", "typescript", "javascript", "mysql", "oracle db"],
       "description":
         "Software Developer January 2012 - July 2022, Buenos Aires Worked with Java for the first few years making portlets for a Liferay instance that served as an intranet for the whole Judiciary system. Did fullstack with Angular and Spring Boot for the latter years. Also used some other technologies such as Wordpress, PHP, NodeJs, Oracle 12, etc."
 

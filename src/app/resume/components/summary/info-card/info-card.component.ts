@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { Experience } from '../../../types/experience';
 
 @Component({
   selector: 'summary-info-card',
@@ -16,10 +17,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InfoCardComponent {
-  @Input() title: string = 'Title';
-  @Input() subtitle: string = 'Subtitle';
-  @Input() description: string = 'Description';
-  @Input() logo: string = 'logo';
-  @Input() years: string = '0';
+
+  @Input() experience!: Experience;
 
  }
