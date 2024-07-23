@@ -1,29 +1,32 @@
-<section id="contact" class="mb-3">
+<section id="contact" class="pb-20">
   <h1 class="text-5xl text-center pt-10  font-bold">{{text.contact_title | titlecase}}</h1>
   <p>
     {{text.contact}}
   </p>
 </section>
-<section id="about" class="mb-3">
+<section id="about" class="pb-20">
   <h1 class="text-5xl text-center p-10 font-bold">{{text.about_title | titlecase}}</h1>
 
   <!-- about text  -->
-   <div>
-     <div class="flex flex-col w-1/2 text-left p-5">
-       @for (paragraph of text.about; track $index) {
-         <p class="font-bold text-gray-700 p-2 text-xl">
-           {{ paragraph }}
-          </p>
-        }
-      </div>
+  <div class="flex flex-row justify-evenly items-start">
+    <div class="flex flex-col w-1/2 text-left p-5">
+      @for (paragraph of text.about; track $index) {
+      <p class="font-bold text-gray-700 p-2 text-xl">
+        {{ paragraph }}
+      </p>
+      }
     </div>
+    <div>
+      <img src="../../../../assets/images/mendoza.svg" class="p-2 h-96 bottom-1 align-middle"/>
+    </div>
+  </div>
 </section>
 <section id="experience" class="bg-slate-500">
-  <h2 class="text-5xl text-white text-center p-20 font-bold">{{ text.experience_title | titlecase}}.</h2>
-  <div class="grid grid-cols-1 lg:grid-cols-2">
+  <h2 class="text-5xl text-white text-center p-20 font-bold">{{ text.experience_title | titlecase}}</h2>
+  <div class="grid grid-cols-1 lg:grid-cols-2 m-4">
     @for (experience of text['experience']; track experience.title) {
-    <summary-info-card [title]='experience.title' [subtitle]='experience.time'
-      [description]='experience.description' [logo]='experience.logo' />
+     <summary-info-card [title]='experience.title' [subtitle]='experience.time' [description]='experience.description'
+      [logo]='experience.logo' [years]='experience.years'/>
     }
   </div>
 </section>

@@ -20,5 +20,6 @@ export class InfoCardComponent {
   @Input() subtitle: string = 'Subtitle';
   @Input() description: string = 'Description';
   @Input() logo: string = 'logo';
+  @Input() years: string = '0';
 
  }
