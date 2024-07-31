@@ -58,5 +58,17 @@
       "description":
         "First experience working with computers. They had a bunch of old computers and I had to keep them running."
     }
+  ],
+  "certifications": [
+    {
+      "title": "ASW Cloud Practitioner",
+      "description": "certificacion practitioner",
+      "logo": "AWS-Certified-Cloud-Practitioner_badge.png"
+    },
+    {
+      "title": "ASW Developer Associate",
+      "description": "certificacion developer",
+      "logo": "AWS-Certified-Developer-Associate_badge.png"
+    }
   ]
 }

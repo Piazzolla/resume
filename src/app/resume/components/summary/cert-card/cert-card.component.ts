@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Certification, Experience } from '../../../types/experience';
+import { Certification } from '../../../types/experience';
 
 @Component({
-  selector: 'summary-info-card',
+  selector: 'summary-cert-card',
   standalone: true,
   imports: [
     CommonModule,
   ],
-  templateUrl: './info-card.component.html',
+  templateUrl: './cert-card.component.html',
   styles: `
     :host {
       display: block;
@@ -16,9 +16,6 @@ import { Certification, Experience } from '../../../types/experience';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class InfoCardComponent {
-
-  @Input() experience!: Experience;
-
-
+export class CertCardComponent {
+  @Input() certification!: Certification;
  }

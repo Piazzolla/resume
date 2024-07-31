@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TextService } from '../../services/text.service';
 import { InfoCardComponent } from "./info-card/info-card.component";
+import { CertCardComponent } from "./cert-card/cert-card.component";
 
 @Component({
     selector: 'app-summary',
@@ -14,9 +15,10 @@ import { InfoCardComponent } from "./info-card/info-card.component";
   `,
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
-        CommonModule,
-        InfoCardComponent
-    ]
+    CommonModule,
+    InfoCardComponent,
+    CertCardComponent
+]
 })
 export default class SummaryComponent {
 
